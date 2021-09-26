@@ -38,15 +38,15 @@ public class TestGreeter {
     @Test
   public void greetShouldIncludeGreetingMessage() {
     String someone = "World, Thanks you making me Happy";
-
+	--permit-illegal-access
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 }
 
  @Test
-  public void greetShouldIncludeGreetingMessage2() {
+  public void greetShouldIncludeMessage() {
     String someone = "World, Thanks you making me Happy and joie";
-
+	--permit-illegal-access
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 }
