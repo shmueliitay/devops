@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
 import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.containsString;
---permit-illegal-access
+
 
 public class TestGreeter {
 
@@ -38,14 +38,6 @@ public class TestGreeter {
     @Test
   public void greetShouldIncludeGreetingMessage() {
     String someone = "World, Thanks you making me Happy";
-	--permit-illegal-access
-    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
-  }
-}
-
- @Test
-  public void greetShouldIncludeMessage() {
-    String someone = "World, Thanks you making me Happy and joie";
 	--permit-illegal-access
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
